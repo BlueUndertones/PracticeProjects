@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+            </p>
+        </div>
+    </section>
+}
+<h3>This project will include the following functions:</h3>
+<ol class="round">
+    <li class="one">
+    <h5>MVC</h5>
+        Model, View, Controller
+        <p>
+        Models: Are the objects that receive and store data (Person.cs file)
+        </p>
+        <p>
+        View: Displays the data (home, person & share; index.cshtml files)
+        </p>
+        <p>
+        Controller: handles user interaction; read data from view, control user input & send data to model. (HomeController.cs file)
+        </p>
+    </li>
+
+    <li class="two">
+    <h5>Person</h5>
+        Accepting a person's first name, last name and age and storing in a database for recall.
+        You can also edit or delete an entry.
+    </li>
+
+    <li class="three">
+    <h5>Form</h5>
+        Form that is supposed to intake an email addy, subject and feedback and forward the data to a spoof email created by me.
+        (function does not work although visual component is present).
+    </li>
+
+    <li class="four">
+    <h5>Test</h5>
+        Test will accept a first name, last name and email address and return the data on the same screen above the input textboxes.
+    </li>
+</ol>

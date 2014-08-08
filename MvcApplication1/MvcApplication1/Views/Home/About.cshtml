@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+    <p>
+        This is an application that thus far provides static information as well as takes in person data such as first 
+        name, last name and age. The person function is controlled by the personcontroller.cs. Migrations have been queried 
+        to do the inital pull of getting string first and last name. There is a second migration to add and pull the age.
+        <a href="http://www.microsoftvirtualacademy.com/Content/ViewContent.aspx?et=2507&m=2499&ct=15691">See here...</a>
+    </p>
+
+    <p>
+        Use this area to provide additional information.
+    </p>
+
+    <p>
+        Use this area to provide additional information.
+    </p>
+</article>
+
+<aside>
+    <h3>Aside Title</h3>
+    <p>
+        Use this area to provide additional information.
+    </p>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Person", "Index", "Person")</li>
+        <li>@Html.ActionLink("Form", "Index", "Form")</li>
+    </ul>
+</aside>

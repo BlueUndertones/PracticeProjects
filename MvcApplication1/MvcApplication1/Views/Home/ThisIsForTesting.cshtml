@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "ThisIsForTesting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ThisIsForTesting</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        You have submitted:<br />
+        Firstname: @ViewData["firstname"]<br />
+        Lastname: @ViewData["lastname"]<br />
+        Email: @ViewData["email"]<br />
+    </div>
+    <br />
+ 
+    <label for="firstname">Firstname:</label>
+    <input type="text" name="firstname" />
+    <br />
+    <label for="lastname">Lastname:</label>
+    <input type="text" name="lastname" />
+    <br />
+    <label for="email">Email:</label>
+    <input type="text" name="email" />
+    <br />
+    <br />
+ 
+    <input type="submit" name="submit" />
+}
